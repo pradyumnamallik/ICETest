@@ -23,19 +23,19 @@ public class MergeSortedFile {
 		while(line1 != null || line2 != null) {
 			 
 			if(line1 == null){
-				 System.out.println("Read from from file 2 :"+line2);
+				 System.out.println(line2);
 				 pw.println(line2);
 				 line2 = readNextLine(scanner2);
 			}else if(line2 == null){
-				System.out.println("Read from from file 1 :"+line1);
+				System.out.println(line1);
 				pw.println(line1);
 				line1 = readNextLine(scanner1);				
 			}else if(line1.compareToIgnoreCase(line2) <=0){
-				System.out.println("Read from from file 1 :"+line1);
+				System.out.println(line1);
 				pw.println(line1);
 				line1 = readNextLine(scanner1);
 			}else {
-				System.out.println("Read from from file 2 :"+line2);
+				System.out.println(line2);
 				pw.println(line2);
 				line2 = readNextLine(scanner2);
 			}
